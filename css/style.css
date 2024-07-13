@@ -1,0 +1,298 @@
+:root {
+  --primary: #f9004d;
+  --secondary: #868690;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--secondary);
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+}
+h1 {
+  font-weight: 900;
+}
+
+strong {
+  font-weight: 700;
+}
+
+p {
+  color: var(--secondary);
+}
+
+.site-title {
+  font-size: 75px;
+}
+
+.site-title .text-name {
+  color: transparent;
+  -webkit-text-stroke: 3px var(--primary);
+}
+
+.animated {
+  animation: Fadeindown 1.5s infinite;
+}
+
+p.my-job {
+  color: white;
+}
+
+.scroll-down-arrow {
+  left: 50%;
+  bottom: 38px;
+}
+
+@keyframes Fadeindown {
+  0% {
+    top: -25px;
+    opacity: 0;
+  }
+
+  100% {
+    top: 10px;
+    opacity: 1;
+  }
+}
+
+.bg-dark-1 {
+  background: #191919;
+}
+
+.bg-dark-2 {
+  background: #101010;
+}
+
+.section-title {
+  font-size: 62px;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.nav-tabs .nav-link {
+  color: white !important;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #3e3e3e;
+  border-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.nav-tabs {
+  border-color: var(--secondary);
+}
+
+.nav-tabs .nav-link:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.single-service-icon i {
+  color: var(--primary);
+  font-size: 26px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.single-service-icon {
+  min-width: 72px;
+  min-height: 72px;
+  background-color: #3c3c3c;
+  border-radius: 5px;
+}
+
+.single-services p {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 500;
+}
+
+.prt-item img {
+  max-width: 100%;
+}
+
+.grid-item {
+  margin-bottom: 20px;
+}
+
+.portfolio-filter button {
+  border: 0;
+  background-color: transparent;
+  color: white;
+}
+
+.portfolio-filter button.clicked {
+  color: var(--primary);
+}
+
+.tns-nav {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.tns-nav button {
+  background-color: gray;
+  border: none;
+  margin: 6px;
+  height: 12px;
+  width: 5px;
+  border-radius: 50%;
+}
+
+.tns-nav button:hover {
+  background-color: var(--primary);
+}
+
+.tns-nav .tns-nav-active {
+  background-color: var(--primary);
+  position: relative;
+
+}
+
+.tns-nav .tns-nav-active::before {
+  content: "";
+  position: absolute;
+  height: 150%;
+  width: 150%;
+  left: -3px;
+  top: -3px;
+  border: 1px solid var(--primary);
+  border-radius: 50%;
+}
+
+.test-thumb {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.btn-submit {
+  background-color: var(--primary);
+  color: white;
+  padding: 10px 22px;
+  letter-spacing: 2px;
+  border: 2px solid transparent;
+}
+
+.btn-submit:hover {
+  background-color: transparent;
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.header {
+  margin-top: -108px;
+}
+
+.navbar {
+  padding-top: 30px;
+  background-color: transparent;
+  z-index: 99;
+}
+
+
+.fixed-top {
+  top: -40px;
+  transform: translateY(40px);
+  background-color: #000;
+  opacity: 0.9;
+  transition: transform 0.3s;
+}
+
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link active,
+.navbar-nav .nav-link:hover {
+  color: var(--primary) !important;
+}
+
+.custom-wrapper {
+  width: 100%;
+  padding: 0.75rem;
+  max-width: 1820px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.text-pink {
+  color: var(--primary);
+}
+
+.nav-social a {
+  color: var(--secondary);
+}
+
+.nav-social a:hover {
+  color: var(--primary);
+}
+
+.scroll-to-top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  display: none;
+}
+
+.scroll-to-top i {
+  color: var(--primary);
+  background-color: #383838;
+  padding: 14px 16px;
+  border-radius: 7px;
+  transition: background-color 0.2s ease;
+}
+
+.scroll-to-top i:hover {
+  background-color: #696969;
+}
+
+@media only screen and (max-width: 792px) {
+
+  body{
+   font-size: 16px;
+   line-height: 26px;
+  }
+
+   .site-title {
+    font-size: 50px;
+   }
+  .navbar {
+    background-color: black;
+    padding: 15px 0;
+  }
+
+  header{
+    background-position: 62%;
+    background-size: cover;
+  }
+
+  .section-title{
+    font-size:42px;
+    font-weight: 700;
+  }
+  .nav-tabs{
+    justify-content: center;
+  }
+
+  .single-test-content.p-5{
+padding: 2rem 1rem !important;
+}
+}
