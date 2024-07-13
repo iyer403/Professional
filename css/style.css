@@ -160,7 +160,7 @@ p.my-job {
 .tns-nav .tns-nav-active {
   background-color: var(--primary);
   position: relative;
-
+  top: -3px;
 }
 
 .tns-nav .tns-nav-active::before {
